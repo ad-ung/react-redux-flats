@@ -8,9 +8,13 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
+import flatsReducer from './reducers/flats_reducer';
+import selectedFlatReducer from './reducers/selected_flat_reducer';
+
 // State and reducers
 const reducers = combineReducers({
-  changeMe: (state = null, action) => state
+  flats: flatsReducer,
+  selectedFlat: selectedFlatReducer
 });
 
 // render an instance of the component in the DOM

@@ -1,9 +1,13 @@
 import React from 'react';
 
+import CardList from '../containers/card_list';
+import Map from '../containers/map';
+
 const App = () => {
   return (
-    <div className="app">
-      <p>React + Redux starter</p>
+    <div>
+      <CardList />
+      <Map />
     </div>
   );
 };
